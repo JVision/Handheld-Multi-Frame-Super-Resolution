@@ -3,6 +3,8 @@
 #include <opencv2/core.hpp>
 #include <numeric>
 
+void getKernelPara(float lambda1, float lambda2, float D_tr, float D_th, float &k1, float &k2, float k_detail, float k_denoise, float K_shrink, float k_streach);
+
 template<typename  T>
 cv::Mat getKernelWeights(int rows, int cols, T a, T b, T c, T d)
 {
